@@ -28,5 +28,3 @@ func (r *eventEmitter) Emit(eventName string, args ...interface{}) {
 func (r *eventEmitter) On(eventName string, cb callback) {
 	r.messages[eventName] = append(r.messages[eventName], cb)
 }
-
-// m := make() make a map of Events that emit will be searched when emit('event name') is called
